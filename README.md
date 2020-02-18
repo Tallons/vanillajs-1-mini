@@ -219,7 +219,7 @@ In this step, we will start working on the javascript functions needed to change
 function selectTheme(theme) {
   document.getElementsByTagName("body")[0].className = theme;
   document.getElementsByTagName("main")[0].className = theme;
-  const buttons = document.getElementsByTagName("button");
+  const buttons = document.getElementByTagName("button");
 
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].className = theme;
